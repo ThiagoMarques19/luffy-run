@@ -1,0 +1,90 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+
+.game-board {
+    width: 100%;
+    height: 500px;
+    margin: 0% auto;
+    position: relative;
+    overflow: hidden;
+    background-image: url(https://s-media-cache-ak0.pinimg.com/originals/84/54/5d/84545d005244ad4b7a4dceac39fa9c9d.gif);
+    background-size: contain;
+}
+
+.rock {
+    position: absolute;
+    bottom: 0;
+    width: 80px;
+    animation: rock-animation 1.5s infinite linear;
+}
+
+.luffy {
+    width: 120px;
+    position: absolute;
+    bottom: 0;
+}
+
+.jump {
+    animation: jump 500ms ease-out;
+}
+
+.clouds {
+    position: absolute;
+    width: 325px;
+    animation: clouds-animation 10s infinite linear;
+}
+
+@keyframes rock-animation {
+    from {
+        right: -80px;
+    }
+
+    to {
+        right: 100%;
+    }
+
+
+}
+
+@keyframes jump {
+
+
+    0% {
+        bottom: 0;
+    }
+
+    40% {
+        bottom: 180px;
+    }
+
+    50% {
+        bottom: 180px;
+    }
+
+    60% {
+        bottom: 180px;
+    }
+
+    100% {
+        bottom: 0;
+    }
+
+}
+
+@keyframes clouds-animation {
+    from{
+        right: -550px;
+    }
+
+    to {
+        right: 100%;
+    }
+}
+
+body {
+    background-image: url(https://th.bing.com/th/id/R.7a6baef925c0f41bfc6d672db76c45be?rik=qDNQD5ftdU3yJA&riu=http%3a%2f%2fpiq.codeus.net%2fstatic%2fmedia%2fuserpics%2fpiq_44277_400x400.png&ehk=3RxrOtur8Hidzsni030EpXzafTdYH3PisF1cQdRCEkM%3d&risl=&pid=ImgRaw&r=0);
+}
